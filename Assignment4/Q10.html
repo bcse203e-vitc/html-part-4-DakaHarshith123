@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <title>Customizable Form Template</title>
+    <style>
+        body {
+            background-color: rgb(240, 255, 240);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Customizable Form Template</h1>
+    <table>
+        <label for="formName">Form Name            :     </label>
+        <input type="text" id="formName" name="formName" required>
+        <br><p> </p>
+        <label for="numFields">Number of Input Fields   :     </label>
+        <input type="number" id="numFields" name="numFields" required>
+        <br><p> </p>
+        <label for="fieldType">Field Types             :     </label>
+        <select id="fieldType" name="fieldType">
+            <option value="text">Text</option>
+            <option value="email">Email</option>
+            <option value="number">Number</option>
+            <option value="date">Date</option>
+        </select>
+        <br><p> </p>
+        <label for="fieldLabel">Field Labels             :     </label>
+        <input type="text" id="fieldLabel" name="fieldLabel" required>
+        <br><p> </p>
+        <input type="submit" value="Generate Form">
+        <br><p> </p>
+        <label>Reorder Fields          : </label>
+        <input type="text" placeholder="Drag and drop fields here" disabled>
+    </table>
+</body>
+</html>
